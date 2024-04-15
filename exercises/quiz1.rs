@@ -13,10 +13,16 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
-
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(price: u32) -> u32
+{
+    let ret = if price <= 40 {
+        2 * price
+    } else {
+        price
+    };
+    ret
+}
 
 // Don't modify this function!
 #[test]
@@ -31,3 +37,4 @@ fn verify_test() {
     assert_eq!(41, price3);
     assert_eq!(65, price4);
 }
+
