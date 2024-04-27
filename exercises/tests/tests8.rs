@@ -18,6 +18,7 @@ mod tests {
         #[cfg(feature = "pass")]
         return;
 
+        assert!(true);
         panic!("no cfg set");
     }
 }
